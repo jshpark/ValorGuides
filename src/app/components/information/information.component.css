@@ -1,0 +1,39 @@
+div {
+    margin: 0 auto;
+}
+
+mat-toolbar-row {
+    position: relative;
+    height: 30px;
+}
+
+mat-toolbar{
+    position: relative;
+    background-color: transparent;
+    align-items: center;
+    margin-top: 418px;
+}
+
+button {
+    position: relative;
+    margin: 12px;
+    font-family: Acme;
+    color: white;
+    z-index: 1;
+}
+
+p {
+    position: relative;
+    color: white;
+    font-size: 10px;
+    margin: auto;
+}
+
+#button-row {
+    margin-left: 40%;
+}
+
+#copyright-row {
+    margin-left: 15%;
+}
+
