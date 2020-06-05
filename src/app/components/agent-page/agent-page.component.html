@@ -1,0 +1,27 @@
+<link href="https://fonts.googleapis.com/css?family=Squada%20One" rel="stylesheet" type="text/css">
+
+<div class="agentPageFormat">
+    <div>
+        <mat-card class="agentBar">
+            <!-- <div >
+                <mat-card *ngFor="let agent of this.agents" class="agentCard">
+                    <input type="image" id="button" class="agentPictureButton" [src]="agent.imageUrl" (click)="selectAgent(agent.agentName)">
+                    <h6 class="agentName">{{agent.agentName}}</h6>
+                    <button mat-button class="agentButton">{{agent.agentName}}</button>
+                </mat-card>
+            </div> -->
+
+            <mat-card class="agentCard" *ngFor="let agent of this.agents">
+                <input type="image" class="agentPictureButton" [src]="agent.imageUrl" (click)="selectAgent(agent.agentName)">
+                <p class="agentName">{{agent.agentName}}</p>
+            </mat-card>
+
+
+        </mat-card>
+    </div>
+    <div>
+        <mat-card class="agentInfo" *ngIf="showDetails">
+            <img class="agentPicture" [src]="buttonAgent.imageUrl">
+        </mat-card>
+    </div>
+</div>

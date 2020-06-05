@@ -1,0 +1,94 @@
+.agentPageFormat {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #263b91;
+    overflow: hidden;
+}
+
+.agentBar {
+    position: relative;
+    width: 1075px;
+    height: 110px;
+    left: 50%;
+    margin-left: -537px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.agentCard {
+    display: inline;
+    border-style: none;
+    background-color: white;
+    float: left;
+    text-align: center;
+    box-shadow: none;
+    margin-left: 2px;
+    margin-right: 2
+}
+
+.agentPictureButton {
+    border-radius: 10px;
+}
+
+.agentPictureButton:focus {
+    outline-color: yellow;
+    opacity: .8;
+}
+
+
+.agentPictureButton:hover {
+    opacity: .8;
+}
+
+
+.agentName {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px; 
+    font-family: 'Squada One';
+    color: black;
+}
+
+
+.agentInfo {
+    position: relative;
+    width: 1075px;
+    height: 500px;
+    left: 50%;
+    margin-left: -537px;
+    margin-top: 10px;
+}
+
+.ability {
+    width: 216px;
+    height: 450px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.agentPicture {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* 
+.qAbility {
+    
+}
+
+.cAbility {
+
+}
+
+.eAbility {
+
+}
+
+.xAbility {
+
+} */
+
+
