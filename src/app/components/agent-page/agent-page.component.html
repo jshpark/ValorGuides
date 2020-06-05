@@ -3,25 +3,51 @@
 <div class="agentPageFormat">
     <div>
         <mat-card class="agentBar">
-            <!-- <div >
-                <mat-card *ngFor="let agent of this.agents" class="agentCard">
-                    <input type="image" id="button" class="agentPictureButton" [src]="agent.imageUrl" (click)="selectAgent(agent.agentName)">
-                    <h6 class="agentName">{{agent.agentName}}</h6>
-                    <button mat-button class="agentButton">{{agent.agentName}}</button>
-                </mat-card>
-            </div> -->
-
             <mat-card class="agentCard" *ngFor="let agent of this.agents">
                 <input type="image" class="agentPictureButton" [src]="agent.imageUrl" (click)="selectAgent(agent.agentName)">
                 <p class="agentName">{{agent.agentName}}</p>
             </mat-card>
-
-
         </mat-card>
     </div>
     <div>
         <mat-card class="agentInfo" *ngIf="showDetails">
-            <img class="agentPicture" [src]="buttonAgent.imageUrl">
+            <div class="agentBackground">
+                <img class="agentPicture" [src]="buttonAgent.agentBodyUrl">
+            </div>
+            <div class="agentAbilities">
+                <mat-card class="abilityWrapper">
+                    <div class="abilityBackground">
+                        <input type="image" class="ability" [src]="buttonAgent.qImageUrl" (click)="selectAbility('1')">
+                    </div>
+                    <p class="abilityName">{{buttonAgent.qName}}</p>
+                </mat-card>
+                <mat-card class="abilityWrapper">
+                    <div class="abilityBackground">
+                        <input type="image" class="ability" [src]="buttonAgent.cImageUrl" (click)="selectAbility('2')">
+                    </div>
+                    <p class="abilityName">{{buttonAgent.cName}}</p>
+                </mat-card>
+                <mat-card class="abilityWrapper">
+                    <div class="abilityBackground">
+                        <input type="image" class="ability" [src]="buttonAgent.eImageUrl" (click)="selectAbility('3')">
+                    </div>
+                    <p class="abilityName">{{buttonAgent.eName}}</p>
+                </mat-card>
+                <mat-card class="abilityWrapper">
+                    <div class="abilityBackground">
+                        <input type="image" class="ability" [src]="buttonAgent.xImageUrl" (click)="selectAbility('4')">
+                    </div>
+                    <p class="abilityName">{{buttonAgent.xName}}</p>
+                </mat-card>
+            </div>
+            <mat-card class="abilityDescription" *ngIf="showAbilityDescription">
+                <p>{{ability.description}}</p>
+                <p>{{ability.cost}}</p>
+                <p>{{ability.use}}</p>
+            </mat-card>
+            <video width="300" height="150" [src]="ability.video" autoplay loop class="abilityVideo" *ngIf="showAbilityDescription">
+                Your browser does not support HTML5 video.
+            </video>
         </mat-card>
     </div>
 </div>
