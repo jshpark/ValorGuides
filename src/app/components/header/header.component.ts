@@ -18,4 +18,8 @@ export class HeaderComponent {
     goToHome(){
         this.router.navigateByUrl('/');
     }
+
+    goToMaps() {
+        this.router.navigateByUrl('/maps')
+    }
 }

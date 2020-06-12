@@ -1,0 +1,98 @@
+.mapPageFormat {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #263b91;
+    overflow: hidden;
+}
+
+.mapSelection{
+    position: relative;
+    width: 1000px;
+    height: 110px;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 10px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.mapCard {
+    display: inline;
+    border-style: none;
+    background-color: transparent;
+    float: left;
+    text-align: center;
+    box-shadow: none;
+    margin-left: 60px;
+    margin-right: 2
+}
+
+.mapHoverFormat {
+    overflow: hidden;
+}
+
+.mapPictureButton {
+    height: 250px;
+    width: 350px;
+    transition: 0.5s ease;
+}
+
+.mapPictureButton:hover {
+    opacity: .8;
+    transform: scale(1.02);
+}
+
+.mapPictureButton:focus {
+    outline: none;
+}
+
+.mapNameImage {
+    font-family: 'Squada One';
+    color: white;
+    font-size: 20px;
+}
+
+.mapBar {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    width: 480px;
+    left: 50%;
+    margin-left: -240px;
+}
+
+.mapToolbar {
+    display: inline;
+    border-style: none;
+    border-bottom-style: double;
+    background-color: transparent;
+    float: left;
+    text-align: center;
+    box-shadow: none;
+}
+
+.mapNameToolbar {
+    color: white;
+    font-family: 'Squada one';
+    font-size: 25px;
+}
+
+.mapNameToolbar:hover {
+    color: yellow;
+}
+
+.mapNameToolbar:focus {
+    color: yellow;
+    outline-color: yellow;
+}
+
+.mapImage {
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    margin-left: -290px;
+    width: 580px;
+    height: 600px;
+}
