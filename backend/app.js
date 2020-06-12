@@ -23,6 +23,13 @@ app.get('/agents/getAgents', (req, res) => {
   })
 })
 
+app.get('/maps/getMaps', (req, res) => {
+  db.getMaps(function(results) {
+    const mapJson = JSON.parse(JSON.stringify(results));
+    res.status(200).json({message: "Success", maps: mapJson});
+  })
+})
+
 
 
 

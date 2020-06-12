@@ -43,19 +43,18 @@ export class AgentPageComponent implements OnInit {
 
     selectAbility(agentSkill) {
         this.showAbilityDescription = true;
-        var video = document.getElementById('video');
         switch (agentSkill){
             case '1':
-                this.ability.video = this.buttonAgent.qVideo;
-                this.ability.description = this.buttonAgent.qDescription;
-                this.ability.cost = this.buttonAgent.qCost;
-                this.ability.use = this.buttonAgent.qUse;
-                break;
-            case '2':
                 this.ability.video = this.buttonAgent.cVideo;
                 this.ability.description = this.buttonAgent.cDescription;
                 this.ability.cost = this.buttonAgent.cCost;
                 this.ability.use = this.buttonAgent.cUse;
+                break;
+            case '2':
+                this.ability.video = this.buttonAgent.qVideo;
+                this.ability.description = this.buttonAgent.qDescription;
+                this.ability.cost = this.buttonAgent.qCost;
+                this.ability.use = this.buttonAgent.qUse;
                 break;
             case '3':
                 this.ability.video = this.buttonAgent.eVideo;
@@ -70,7 +69,6 @@ export class AgentPageComponent implements OnInit {
                 this.ability.use = this.buttonAgent.xUse;
                 break;
         }
-
     }
 
     ngOnDestroy() {

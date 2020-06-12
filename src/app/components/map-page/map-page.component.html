@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css?family=Squada%20One" rel="stylesheet" type="text/css">
+
+<div class="mapPageFormat">
+    <div *ngIf="!showToolBar">
+        <mat-card class="mapSelection">
+            <mat-card class="mapCard" *ngFor="let map of this.maps">
+                <div class="mapHoverFormat">
+                    <input type="image" [src]="map.mapImageUrl" (click)="selectMap(map)" class="mapPictureButton">
+                </div>
+                <p class="mapNameImage">{{map.mapName}}</p>
+            </mat-card>
+        </mat-card>
+    </div>
+    <div *ngIf="showToolBar">
+        <div>
+            <mat-card class="mapBar">
+                <mat-card class="mapToolbar" *ngFor="let map of this.maps">
+                    <div>
+                        <button mat-button (click)="selectMap(map)" class="mapNameToolbar">{{map.mapName}}</button>
+                    </div>
+                </mat-card>
+            </mat-card>
+        </div>
+        <div>
+            <img [src]="map.mapFullImageUrl" class="mapImage">
+        </div>
+    </div>
+</div>

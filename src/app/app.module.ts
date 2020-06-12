@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { InformationComponent } from './components/information/information.component';
 import { AgentPageComponent } from './components/agent-page/agent-page.component';
+import { MapPageCompnent } from './components/map-page/map-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AgentPageComponent } from './components/agent-page/agent-page.component
     HomePageComponent,
     HeaderComponent,
     InformationComponent,
-    AgentPageComponent
+    AgentPageComponent,
+    MapPageCompnent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css?family=Squada%20One" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Squada%20One" rel="stylesheet" type="text/css">
 
 <div class="agentPageFormat">
     <div>
@@ -17,15 +17,15 @@
             <div class="agentAbilities">
                 <mat-card class="abilityWrapper">
                     <div class="abilityBackground">
-                        <input type="image" class="ability" [src]="buttonAgent.qImageUrl" (click)="selectAbility('1')">
+                        <input type="image" class="ability" [src]="buttonAgent.cImageUrl" (click)="selectAbility('1')">
                     </div>
-                    <p class="abilityName">{{buttonAgent.qName}}</p>
+                    <p class="abilityName">{{buttonAgent.cName}}</p>
                 </mat-card>
                 <mat-card class="abilityWrapper">
                     <div class="abilityBackground">
-                        <input type="image" class="ability" [src]="buttonAgent.cImageUrl" (click)="selectAbility('2')">
+                        <input type="image" class="ability" [src]="buttonAgent.qImageUrl" (click)="selectAbility('2')">
                     </div>
-                    <p class="abilityName">{{buttonAgent.cName}}</p>
+                    <p class="abilityName">{{buttonAgent.qName}}</p>
                 </mat-card>
                 <mat-card class="abilityWrapper">
                     <div class="abilityBackground">
@@ -41,11 +41,11 @@
                 </mat-card>
             </div>
             <mat-card class="abilityDescription" *ngIf="showAbilityDescription">
-                <p>{{ability.description}}</p>
-                <p>{{ability.cost}}</p>
-                <p>{{ability.use}}</p>
+                <p><strong>Cost:</strong> {{ability.cost}}</p>
+                <p><strong>Charges:</strong> {{ability.use}}</p>
+                <p><strong>Description:</strong> {{ability.description}}</p>
             </mat-card>
-            <video width="300" height="150" [src]="ability.video" autoplay loop class="abilityVideo" *ngIf="showAbilityDescription">
+            <video width="300" height="150" [src]="ability.video" autoplay loop muted class="abilityVideo" *ngIf="showAbilityDescription" id="video">
                 Your browser does not support HTML5 video.
             </video>
         </mat-card>

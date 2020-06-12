@@ -34,3 +34,14 @@ exports.getAgents = function (sucessCb, errCb){
         .catch(errCb);
 }
 
+exports.getMaps = function (sucessCb, errCb) {
+    var sql = "SELECT * FROM maps;";
+    this.get()
+        .query(
+            {sql: sql},
+            []
+        )
+        .then(sucessCb)
+        .catch(errCb)
+}
+

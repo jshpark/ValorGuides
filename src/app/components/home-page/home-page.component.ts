@@ -8,6 +8,6 @@ import {Component} from '@angular/core';
 
 export class HomePageComponent {
     submitPlayer(){
-        alert('works')
+        alert('Waiting for Valorant API')
     }
 }
